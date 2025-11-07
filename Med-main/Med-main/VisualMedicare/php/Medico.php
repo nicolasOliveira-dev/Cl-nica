@@ -75,5 +75,20 @@ class Medico
         }
         $sql = "SELECT * FROM medicos";
     }
+
+    public function atualizar($id)
+    {
+        $conectar = Conexao::getConexao();
+        if (!$conectar) {
+            throw new Exception("Não foi possível conectar ao banco de dados.");
+        }
+        $registro = $this->buscarPorId($id);
+        if (!$registro) {
+            throw new Exception("Médico com ID $id não encontrado.");
+        }
+        $sql = "UPDATE medicos SET nome_completo=?, crm=?, telefone=?, especialidade=?, email=?, status=? WHERE id=?";
+        $comando = $conectar->prepare($sql);
+        $comando->execute([$this->nomeCompleto, $this->crm, $this->telefone, $this->especialidade, $this->email, $this->status, $id]);
+    }
 }
 ?>
