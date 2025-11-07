@@ -91,9 +91,9 @@ class Receita
             throw new Exception("Não foi possível conectar ao banco de dados.");
         }
 
-        $sql = "UPDATE receitas SET id_consulta=?, id_paciente=?, medicamento =?, quantidade =?, posologia =?,  data_emissao=?, validade=?, WHERE id=?";
+        $sql = "UPDATE receitas SET id_consulta=?, id_paciente=?, medicamento =?, quantidade =?, posologia =?,  data_emissao=?, validade=? WHERE id=?";
         $comando = $conectar->prepare($sql);
-        $comando->execute([$this->idConsulta, $this->idPaciente, $this->medicamento, $this->quantidade, $this->posologia, $this->dataEmissao, $this->medicamento, $this->quantidade, $this->validade, $id]);
+        $comando->execute([$this->idConsulta, $this->idPaciente, $this->medicamento, $this->quantidade, $this->posologia, $this->dataEmissao, $this->validade, $id]);
         if ($comando->rowCount() > 0) {
             return "Receita atualizada com sucesso.";
         } else {

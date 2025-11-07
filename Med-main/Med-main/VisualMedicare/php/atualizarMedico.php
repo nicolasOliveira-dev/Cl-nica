@@ -21,6 +21,7 @@ try {
     echo "Erro ao atualizar médico: " . $e->getMessage();
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
