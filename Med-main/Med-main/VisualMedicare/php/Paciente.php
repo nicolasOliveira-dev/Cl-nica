@@ -11,6 +11,7 @@ class Paciente
     private $email;
     private $criadoEm;
 
+
     public function __construct($nomeCompleto, $dataNascimento, $cpf, $telefone, $email)
     {
         $this->nomeCompleto = $nomeCompleto;

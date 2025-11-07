@@ -47,25 +47,25 @@ try {
             <nav class="main-nav">
                 <ul>
                     <li class="nav-item active">
-                        <a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+                        <a href="../html/dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
                     </li>
                     <li class="nav-item">
-                        <a href="pacientes.html"><i class="fas fa-user-injured"></i> Pacientes</a>
+                        <a href="../html/pacientes.html"><i class="fas fa-user-injured"></i> Pacientes</a>
                     </li>
                     <li class="nav-item">
-                        <a href="medicos.html"><i class="fas fa-user-md"></i> Médicos</a>
+                        <a href="../html/medicos.html"><i class="fas fa-user-md"></i> Médicos</a>
                     </li>
                     <li class="nav-item">
-                        <a href="consulta.html"><i class="fas fa-calendar-check"></i> Consultas</a>
+                        <a href="../html/consulta.html"><i class="fas fa-calendar-check"></i> Consultas</a>
                     </li>
                     <li class="nav-item">
-                        <a href="pagamento.html"><i class="fas fa-file-invoice-dollar"></i> Pagamentos</a>
+                        <a href="../html/pagamento.html"><i class="fas fa-file-invoice-dollar"></i> Pagamentos</a>
                     </li>
                     <li class="nav-item">
-                        <a href="receitas.html"><i class="fas fa-file-prescription"></i> Receitas</a>
+                        <a href="../html/receitas.html"><i class="fas fa-file-prescription"></i> Receitas</a>
                     </li>
                     <li class="nav-item">
-                        <a href="relatorios.html"><i class="fas fa-chart-line"></i> Relatórios</a>
+                        <a href="../html/relatorios.html"><i class="fas fa-chart-line"></i> Relatórios</a>
                     </li>
                 </ul>
             </nav>
