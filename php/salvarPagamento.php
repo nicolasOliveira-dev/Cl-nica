@@ -4,7 +4,7 @@ require_once "Pagamento.php";
 $idConsulta = $_POST['idConsulta'] ;
 $valor = $_POST['valor'];
 $dataPagamento = $_POST['dataPagamento'];
-$formaPagamento = $_POST['formaPagamento'];
+$formaPagamento = $_POST['metodo'];
 $status = $_POST['status'];
 
 $pagamento = new Pagamento($idConsulta, $valor, $dataPagamento, $formaPagamento, $status);

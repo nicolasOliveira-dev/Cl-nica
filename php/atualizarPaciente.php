@@ -7,7 +7,7 @@ require_once "Paciente.php";
 $id = $_POST['id'];
 $nome = $_POST['nome'];
 $cpf = $_POST['cpf'];
-$dataNascimento = $_POST['data_nascimento'];
+$dataNascimento = $_POST['dataNascimento'];
 $telefone = $_POST['telefone'];
 $email = $_POST['email'];
 
@@ -15,7 +15,7 @@ $email = $_POST['email'];
 $paciente = new Paciente($nome, $dataNascimento, $cpf, $telefone, $email);
 
 try {
-    paciente->atualizar($id);
+    $paciente->atualizar($id);
     echo "Paciente atualizado com sucesso.";
 } catch (Exception $e) {
     echo "Erro ao atualizar paciente: " . $e->getMessage();
