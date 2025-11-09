@@ -2,18 +2,18 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-require_once '../Consulta.php';
+require_once 'Paciente.php';
 
-$idConsulta = $_POST['id'];
+$idPagamento = $_POST['id'];
 
+$paciente = new Paciente(null, null, null, null, null);
 
- $consulta = new Consulta(null, null, null, null, null, null, null);
 try {
-    $consulta->cancelar($idConsulta);
-    echo 'Consulta excluída com sucesso.';
+    $paciente->excluir($idPagamento);
+    echo 'Pagamento excluído com sucesso.';
 
 } catch (Exception $e) {
-    echo 'Erro ao excluir consulta: ' . $e->getMessage();
+    echo 'Erro ao excluir pagamento: ' . $e->getMessage();
 }
 ?>
 

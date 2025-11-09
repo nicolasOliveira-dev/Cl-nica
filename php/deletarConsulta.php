@@ -2,18 +2,18 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-require_once '../Medico.php';
+require_once 'Consulta.php';
 
-$idMedico = $_POST['id'];
+$idConsulta = $_POST['id'];
 
-$medico = new Medico(null, null, null, null, null, null);
 
+ $consulta = new Consulta(null, null, null, null, null, null, null);
 try {
-    $medico->excluir($idMedico);
-    echo 'Médico excluído com sucesso.';
+    $consulta->cancelar($idConsulta);
+    echo 'Consulta excluída com sucesso.';
 
 } catch (Exception $e) {
-    echo 'Erro ao excluir médico: ' . $e->getMessage();
+    echo 'Erro ao excluir consulta: ' . $e->getMessage();
 }
 ?>
 
